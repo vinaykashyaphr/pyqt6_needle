@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>no_input_dialog</class>
+ <widget class="QDialog" name="no_input_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>140</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>360</width>
+    <height>140</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>360</width>
+    <height>140</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>CAUTION !</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/resources.qrc">
+    <normaloff>:/icons/icons/needle.png</normaloff>:/icons/icons/needle.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#no_input_dialog {
+	background-color:rgb(0, 0, 0);
+}
+
+#Title {
+	color: rgb(255, 255, 255);
+}
+
+#Desc {
+	color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="Title">
+     <property name="title">
+      <string>No Input Found</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QFrame" name="Icon">
+        <property name="minimumSize">
+         <size>
+          <width>55</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::TabFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/icons/icons/error.ico);
+background-repeat: no-repeat;
+border: none;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="Layoout">
+        <item>
+         <widget class="QLabel" name="Desc">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Please browse or drop the zip file&lt;br/&gt;(*.zip) containing source files. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../images/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
